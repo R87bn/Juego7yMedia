@@ -4,12 +4,26 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>SIETE Y MEDIA</title>
+    <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
-    <div id="app">
-      <h1>Bootcamp JS - JavaScript SandBox</h1>
+    <div class="contenedor-juego">
+      <h1>JUEGO DE LAS 7 Y MEDIA</h1>
+      <div class="puntuacion">
+        <p>Puntuación: <span id="puntuacion">0</span></p>
+      </div>
+      <div class="cartas"></div>
+      <img id="img-cartas" src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/cartas/back.jpg" alt="Carta" />
     </div>
-    <script type="module" src="/src/main.js"></script>
+    </div>
+    <div class ="controles">
+       <button id="btn-pedir">Pedir Carta</button>
+      <button id="btn-plantarse">Plantarse</button>
+      <button id="btn-ver-que-pasaba" hidden>Ver qué habría pasado</button>
+      <button id="btn-nueva-partida" hidden>Nueva Partida</button>
+    </div>
+    <div id="mensaje" class="mensaje"></div>
+    <script src="./src/main.js"></script>
   </body>
 </html>
